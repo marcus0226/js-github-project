@@ -4,8 +4,8 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
   <title>Document</title>
-  <script src='js/index.js'></script>
-  <link rel='stylesheet' href='index.css'/>
+  <link rel='stylesheet' href='./index.css'/>
+  <script src='./js/index.js'></script>
 </head>
 <body>
   <div id='main'>
@@ -14,16 +14,16 @@
 
     <form id='github-form'>
       <input id='search' type='text' name='search'>
-      <input type='submit' name='submit'/>
+      <input id='searchBtn' type='submit' name='submit' disabled/>
     </form>
 
     <div id='github-container'>
+      <h3 id="user-header" class="hidden">User List</h3>
       <ul id='user-list'>
-
       </ul>
 
-      <ul id='repos-list'>
-
+      <h3 id="repo-header" class="hidden">Repo List</h3>
+      <ul id='repo-list'>
       </ul>
     </div>
 
